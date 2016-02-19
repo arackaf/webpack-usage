@@ -6,7 +6,7 @@ webpackJsonp([0],[
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_script_util_Global__ = __webpack_require__(14);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_script_util_Global__ = __webpack_require__(15);
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_script_util_Global___default = __WEBPACK_IMPORTED_MODULE_0_script_util_Global__ && __WEBPACK_IMPORTED_MODULE_0_script_util_Global__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0_script_util_Global__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0_script_util_Global__; }
 	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0_script_util_Global___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0_script_util_Global___default });
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__SharedUtilities_SharedUtility1__ = __webpack_require__(11);
@@ -41,31 +41,32 @@ webpackJsonp([0],[
 /* 9 */,
 /* 10 */,
 /* 11 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	class SharedUtil1{
-	    constructor(){
-	        this.name = 'Shared Util 1'
-	    }
-	    sharedUtil1_Method1(){
-
-	    }
-	    sharedUtil2_Method1(){
-
-	    }
-	    sharedUtil3_Method1(){
-
-	    }
+	var cbs = [], 
+		data;
+	module.exports = function(cb) {
+		if(cbs) cbs.push(cb);
+		else cb(data);
 	}
+	__webpack_require__.e/* nsure */(10).catch(function(err) { __webpack_require__.oe(err); }).then(function(require) {
+		data = __webpack_require__(12);
+		var callbacks = cbs;
+		cbs = null;
+		for(var i = 0, l = callbacks.length; i < l; i++) {
+			callbacks[i](data);
+		}
+	}.bind(null, __webpack_require__));
 
 /***/ },
-/* 12 */
+/* 12 */,
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = "function globalFunction1(){\r\n\r\n}\r\n\r\nfunction globalFunction2(){\r\n\r\n}"
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	/*
@@ -80,10 +81,10 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(13)(__webpack_require__(12))
+	__webpack_require__(14)(__webpack_require__(13))
 
 /***/ }
 ]);

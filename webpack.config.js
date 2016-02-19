@@ -11,6 +11,9 @@ module.exports = {
 	module: {
 		noParse: [
 			path.join(__dirname, 'modules', 'Global', 'Global')
+		],
+		loaders: [
+			{ test: /SharedUtilities\/*/, loader: "bundle-loader" }
 		]
 	}
 };

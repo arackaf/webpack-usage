@@ -1,22 +1,22 @@
 webpackJsonp([1],{
 
 /***/ 11:
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	class SharedUtil1{
-	    constructor(){
-	        this.name = 'Shared Util 1'
-	    }
-	    sharedUtil1_Method1(){
-
-	    }
-	    sharedUtil2_Method1(){
-
-	    }
-	    sharedUtil3_Method1(){
-
-	    }
+	var cbs = [], 
+		data;
+	module.exports = function(cb) {
+		if(cbs) cbs.push(cb);
+		else cb(data);
 	}
+	__webpack_require__.e/* nsure */(10).catch(function(err) { __webpack_require__.oe(err); }).then(function(require) {
+		data = __webpack_require__(12);
+		var callbacks = cbs;
+		cbs = null;
+		for(var i = 0, l = callbacks.length; i < l; i++) {
+			callbacks[i](data);
+		}
+	}.bind(null, __webpack_require__));
 
 /***/ },
 
