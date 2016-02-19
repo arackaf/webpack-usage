@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+
+    <script>
+
+        function load(name){
+            router.routeToModule(name);
+        }
+
+
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button onclick="load('contacts')">Load Contacts</button>
+    <button onclick="load('tasks')">Load Tasks</button>
+    <button onclick="load('reporting')">Load Reporting</button>
+
+</body>
+</html>

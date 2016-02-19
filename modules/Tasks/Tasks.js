@@ -1,4 +1,4 @@
-import SharedUtil1 from '../../SharedUtilities/SharedUtility1';
+import SharedUtil1 from '../../sharedUtilities/sharedUtility1';
 
 class Tasks{
     constructor(data){

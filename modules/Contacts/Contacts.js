@@ -1,5 +1,5 @@
-import './../../globals/Global';
-import SharedUtil1 from '../../SharedUtilities/SharedUtility1';
+import '../../globals/Global';
+import SharedUtil1 from '../../sharedUtilities/sharedUtility1';
 import Lib1 from './shared/lib1';
 
 class Contacts{

@@ -3,8 +3,8 @@ class Router{
 
     }
     routeToModule(name){
-        System.import('./modules/' + name + '/' + name);
+        System.import('./modules/' + name + '/' + name + '.js');
     }
 }
 
-export default Router;
+window.router = new Router();

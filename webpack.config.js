@@ -1,8 +1,8 @@
 var path = require('path');
 
 const bundleLoaderPaths = [
-	'SharedUtilities',
-	'modules/Contacts/shared/',
+	'sharedUtilities',
+	'modules/contacts/shared/',
 	'globals'
 ];
 
@@ -16,12 +16,21 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, './dist'),
+		publicPath: 'dist/',
 		filename: 'bundle.js'
 	},
 	module: {
 		loaders: [
 			{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" },
-			{ include: scriptLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "script-loader" }
+			{ include: scriptLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "script-loader" },
+			{
+				test: /\.js$/,
+				exclude: /(node_modules)/,
+				loader: 'babel', // 'babel-loader' is also a legal name to reference
+				query: {
+					presets: ['es2015']
+				}
+			}
 		]
 	}
 };
