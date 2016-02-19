@@ -2,7 +2,12 @@ var path = require('path');
 
 const bundleLoaderPaths = [
 	'SharedUtilities',
-	'modules/Contacts/shared/'
+	'modules/Contacts/shared/',
+	'globals'
+];
+
+const scriptLoaderPaths = [
+	'globals'
 ];
 
 module.exports = {
@@ -14,11 +19,9 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	module: {
-		noParse: [
-			path.join(__dirname, 'modules', 'Global', 'Global')
-		],
 		loaders: [
-			{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" }
+			{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" },
+			{ include: scriptLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "script-loader" }
 		]
 	}
 };
