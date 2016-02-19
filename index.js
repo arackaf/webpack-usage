@@ -1,5 +1,10 @@
-import contacts from './modules/contacts';
+class Router{
+    constructor(){
 
-function foo(){}
+    }
+    routeToModule(name){
+        System.import('./modules/' + name + '/' + name);
+    }
+}
 
-module.exports = foo;
+export default Router;
