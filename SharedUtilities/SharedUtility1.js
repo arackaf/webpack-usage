@@ -1,4 +1,4 @@
-class SharedUtil{
+class SharedUtil1{
     constructor(){
         this.name = 'Shared Util 1'
     }
