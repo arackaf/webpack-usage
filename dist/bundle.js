@@ -25,7 +25,7 @@
 
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		8: 0
+/******/ 		9: 0
 /******/ 	};
 
 /******/ 	// The require function
@@ -101,7 +101,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -112,67 +112,75 @@
 	var map = {
 		"./Account/Account": [
 			1,
-			7
+			8
 		],
 		"./Account/Account.js": [
 			1,
-			7
+			8
 		],
 		"./Admin/Admin": [
 			2,
-			6
+			7
 		],
 		"./Admin/Admin.js": [
 			2,
-			6
+			7
 		],
 		"./Billing/Billing": [
 			3,
-			5
+			6
 		],
 		"./Billing/Billing.js": [
 			3,
-			5
+			6
 		],
 		"./Contacts/Contacts": [
 			4,
-			4
+			0
 		],
 		"./Contacts/Contacts.js": [
 			4,
-			4
+			0
+		],
+		"./Contacts/util/Global": [
+			5,
+			5
+		],
+		"./Contacts/util/Global.js": [
+			5,
+			5
 		],
 		"./Messaging/Messaging": [
-			5,
-			3
+			6,
+			4
 		],
 		"./Messaging/Messaging.js": [
-			5,
-			3
+			6,
+			4
 		],
 		"./Reporting/Reporting": [
-			6,
-			2
+			7,
+			3
 		],
 		"./Reporting/Reporting.js": [
-			6,
-			2
+			7,
+			3
 		],
 		"./Scheduling/Scheduling": [
-			7,
-			1
+			8,
+			2
 		],
 		"./Scheduling/Scheduling.js": [
-			7,
-			1
+			8,
+			2
 		],
 		"./Tasks/Tasks": [
-			8,
-			0
+			9,
+			1
 		],
 		"./Tasks/Tasks.js": [
-			8,
-			0
+			9,
+			1
 		]
 	};
 	function webpackAsyncContext(req) {
@@ -191,7 +199,7 @@
 
 /***/ },
 
-/***/ 9:
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	class Router{

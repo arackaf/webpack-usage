@@ -6,6 +6,11 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, './dist'),
-		filename: 'bundle.js',
+		filename: 'bundle.js'
+	},
+	module: {
+		noParse: [
+			path.join(__dirname, 'modules', 'Global', 'Global')
+		]
 	}
 };

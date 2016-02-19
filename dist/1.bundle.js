@@ -1,24 +1,24 @@
 webpackJsonp([1],{
 
-/***/ 7:
+/***/ 9:
 /***/ function(module, exports, __webpack_require__) {
 
-	class Scheduling{
+	class Tasks{
 	    constructor(data){
 	        this.data = data;
 	    }
-	    schedulingMethod1(){
+	    tasksMethod1(){
 
 	    }
-	    schedulingMethod2(){
+	    tasksMethod2(){
 
 	    }
-	    schedulingMethod3(){
+	    tasksMethod3(){
 
 	    }
 	}
 
-	/* harmony default export */ exports["default"] = Scheduling
+	/* harmony default export */ exports["default"] = Tasks
 
 /***/ }
 

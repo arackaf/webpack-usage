@@ -1,24 +1,24 @@
 webpackJsonp([4],{
 
-/***/ 4:
+/***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
-	class Contacts{
+	class Messaging{
 	    constructor(data){
 	        this.data = data;
 	    }
-	    contactsMethod1(){
+	    messagingMethod1(){
 
 	    }
-	    contactsMethod2(){
+	    messagingMethod2(){
 
 	    }
-	    contactsMethod3(){
+	    messagingMethod3(){
 
 	    }
 	}
 
-	/* harmony default export */ exports["default"] = Contacts
+	/* harmony default export */ exports["default"] = Messaging
 
 /***/ }
 

@@ -1,3 +1,5 @@
+require('script!./util/Global');
+
 class Contacts{
     constructor(data){
         this.data = data;

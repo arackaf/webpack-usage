@@ -1,24 +1,24 @@
 webpackJsonp([6],{
 
-/***/ 2:
+/***/ 3:
 /***/ function(module, exports, __webpack_require__) {
 
-	class Admin{
+	class Billing{
 	    constructor(data){
 	        this.data = data;
 	    }
-	    adminMethod1(){
+	    billingMethod1(){
 
 	    }
-	    adminMethod2(){
+	    billingMethod2(){
 
 	    }
-	    adminMethod3(){
+	    billingMethod3(){
 
 	    }
 	}
 
-	/* harmony default export */ exports["default"] = Admin
+	/* harmony default export */ exports["default"] = Billing
 
 /***/ }
 

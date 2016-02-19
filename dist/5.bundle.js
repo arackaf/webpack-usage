@@ -1,24 +1,15 @@
 webpackJsonp([5],{
 
-/***/ 3:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 5:
+/***/ function(module, exports) {
 
-	class Billing{
-	    constructor(data){
-	        this.data = data;
-	    }
-	    billingMethod1(){
+	function globalFunction1(){
 
-	    }
-	    billingMethod2(){
-
-	    }
-	    billingMethod3(){
-
-	    }
 	}
 
-	/* harmony default export */ exports["default"] = Billing
+	function globalFunction2(){
+
+	}
 
 /***/ }
 

@@ -1,24 +1,25 @@
-webpackJsonp([7],[
-/* 0 */,
-/* 1 */
+webpackJsonp([7],{
+
+/***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-	class Account{
+	class Admin{
 	    constructor(data){
 	        this.data = data;
 	    }
-	    accountMethod1(){
+	    adminMethod1(){
 
 	    }
-	    accountMethod2(){
+	    adminMethod2(){
 
 	    }
-	    accountMethod3(){
+	    adminMethod3(){
 
 	    }
 	}
 
-	/* harmony default export */ exports["default"] = Account
+	/* harmony default export */ exports["default"] = Admin
 
 /***/ }
-]);
+
+});
