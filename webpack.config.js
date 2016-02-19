@@ -1,5 +1,10 @@
 var path = require('path');
 
+const bundleLoaderPaths = [
+	'SharedUtilities',
+	'modules/Contacts/shared/'
+];
+
 module.exports = {
 	entry: {
 		app: './index.js'
@@ -13,7 +18,7 @@ module.exports = {
 			path.join(__dirname, 'modules', 'Global', 'Global')
 		],
 		loaders: [
-			{ test: /SharedUtilities\/*/, loader: "bundle-loader" }
+			{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" }
 		]
 	}
 };
