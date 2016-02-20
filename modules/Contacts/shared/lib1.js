@@ -1,4 +1,4 @@
-class lib1{
+class Lib1{
     constructor(){
 
     }
@@ -13,4 +13,4 @@ class lib1{
     }
 }
 
-export default lib1;
+export default Lib1;

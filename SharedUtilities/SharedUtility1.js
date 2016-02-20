@@ -12,3 +12,5 @@ class SharedUtil1{
 
     }
 }
+
+export default SharedUtil1;

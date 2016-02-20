@@ -3,7 +3,9 @@ class Router{
 
     }
     routeToModule(name){
-        System.import('./modules/' + name + '/' + name + '.js');
+        System.import('./modules/' + name + '/' + name).then(obj => {
+            var x = new obj.default();
+        });
     }
 }
 
