@@ -1,5 +1,5 @@
 {
-  "name": "webpack",
+  "name": "webpackusage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,8 @@
   "author": "Adam Rackis <AdamRackis@hotmail.com> (http://github.com/arackaf)",
   "license": "ISC",
   "dependencies": {
-    "script-loader": "^0.6.1"
+    "script-loader": "^0.6.1",
+    "webpack": "^2.0.7-beta"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",

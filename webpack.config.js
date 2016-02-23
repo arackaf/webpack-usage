@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 const bundleLoaderPaths = [
 	'sharedUtilities',
@@ -21,7 +22,7 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-			{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" },
+			//{ include: bundleLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "bundle-loader" },
 			{ include: scriptLoaderPaths.map(p => path.resolve(__dirname, p)), loader: "script-loader" },
 			{
 				test: /\.js$/,
@@ -31,6 +32,9 @@ module.exports = {
 					presets: ['es2015']
 				}
 			}
+		],
+		plugins: [
+			new webpack.optimize.DedupePlugin()
 		]
 	}
 };
